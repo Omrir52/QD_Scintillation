@@ -63,7 +63,7 @@ void DetectorConstruction::DefineMaterials()
     worldMat = nist->FindOrBuildMaterial("G4_AIR");
     water = nist->FindOrBuildMaterial("G4_WATER");
     Aluminum = nist->FindOrBuildMaterial("G4_Al");
-    Glass = nist->FindOrBuildMaterial("G4_GLASS_PLATE");
+    Glass = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
 
     G4Material *CdS = new G4Material("CdS", 4.82*g/cm3, 2);                 //add the density of CdS
     CdS->AddElement(nist->FindOrBuildElement("Cd"), 50.0*perCent);
@@ -72,6 +72,7 @@ void DetectorConstruction::DefineMaterials()
     Scint = new G4Material("Scint", 1.000*g/cm3, 2);            //add the density of scintillator
     Scint->AddMaterial(water, 90.0*perCent);
     Scint->AddMaterial(CdS, 10.0*perCent);
+
     //Testing For Xenon
     //Element
     fLXe = new G4Material("fLXe",3.020* g / cm3, 1);
@@ -117,7 +118,8 @@ void DetectorConstruction::DefineMaterials()
     1.3522, 1.3530, 1.3535, 1.354,  1.3545, 1.355,  1.3555, 1.356,
     1.3568, 1.3572, 1.358,  1.3585, 1.359,  1.3595, 1.36,   1.3608};        //refractive index of scint
         G4double rindexWorld [32] = {1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00};        //refractive index of world
-        G4double rindexGlass [32] = {1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47};
+        //G4double rindexGlass [32] = {1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47};
+        G4double rindexGlass [2] = {1.47, 1.47};
 //        std::vector<G4double> energy = {2.034*eV, 3.021*eV, 4.136*eV};     //energy of photons
 //        std::vector<G4double> rindexScint = {1.34, 1.35, 1.36};            //refractive index of scint
 //        std::vector<G4double> rindexWorld = {1.00, 1.00, 1.00};            //refractive index of world
@@ -172,13 +174,14 @@ void DetectorConstruction::DefineMaterials()
         mptWorld->AddProperty("RINDEX", energy, rindexWorld, 32);
         worldMat->SetMaterialPropertiesTable(mptWorld);
     
-//Glass Adding Glass rindex makes the code take forever to runs
-        G4double glass_AbsLength[32] = {4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m};
-        //G4double glass_AbsLength[32] = {10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m, 10.0 * m};
+//Glass
+        //G4double glass_AbsLength[32] = {4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m, 4.2 * m};
+        G4double glass_AbsLength[2] = {4.2 * m, 4.2 * m};
+        //G4double glass_AbsLength[32] = {1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m, 1000.0* m};
 
         mptGlass = new G4MaterialPropertiesTable();       //Glass properties table
-        mptGlass->AddProperty("ABSLENGTH", energy, glass_AbsLength, 32);
-        mptGlass->AddProperty("RINDEX", energy, rindexGlass, 32);
+        mptGlass->AddProperty("ABSLENGTH", energy, glass_AbsLength, 2);
+        mptGlass->AddProperty("RINDEX", energy, rindexGlass, 2);
         Glass->SetMaterialPropertiesTable(mptGlass);  
     
     // Print materials
@@ -236,7 +239,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     
         G4SubtractionSolid *bottle = new G4SubtractionSolid ("Bottle", solidBottle1, solidBottle2);
         G4LogicalVolume *logicBottle = new G4LogicalVolume(bottle, Glass, "Bottle");
-        //new G4PVPlacement(0, G4ThreeVector(-0.30*m, 0.*m, -0.036*m), logicBottle, "Bottle", logicBox, false, 0, true);
+        new G4PVPlacement(0, G4ThreeVector(-0.30*m, 0.*m, -0.036*m), logicBottle, "Bottle", logicBox, false, 0, true);
     
         //---------------QD---------------------
     
@@ -246,7 +249,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
         new G4PVPlacement(0, G4ThreeVector(0*m, 0*m, -0.0545*m), logicQD, "QD", logicBottle, false, 0, true);
         //Testing for without Bottle
-        new G4PVPlacement(0, G4ThreeVector(-0.30*m, 0*m, -0.0905*m), logicQD, "QD", logicBox, false, 0, true);
+        //new G4PVPlacement(0, G4ThreeVector(-0.30*m, 0*m, -0.0905*m), logicQD, "QD", logicBox, false, 0, true);
         //---------------PMT---------------------
     
         G4Sphere *absorberS = new G4Sphere("Abso", 0.07*m, 0.076*m, 0.*CLHEP::pi, 1.*CLHEP::pi, 0.*CLHEP::pi, 1.*CLHEP::pi);
