@@ -1,0 +1,14 @@
+/control/verbose 0
+/tracking/verbos 0
+/event/verbose 0
+/gps/verbose 2
+/gps/particle nu_e
+/gps/pos/type Plain
+/gps/pos/centre 0. 0. 0. cm
+/gps/pos/halfx 5. cm
+/gps/pos/halfy 5. cm
+/gps/ang/type user
+/gps/ang/mintheta -0.046 rad
+/gps/ang/maxtheta 0.236 rad 
+/gps/energy 4 MeV
+/run/beamOn 10000
