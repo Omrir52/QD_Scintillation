@@ -117,8 +117,7 @@ void DetectorConstruction::DefineMaterials()
     1.3475, 1.348,  1.3485, 1.3492, 1.35,   1.3505, 1.351,  1.3518,
     1.3522, 1.3530, 1.3535, 1.354,  1.3545, 1.355,  1.3555, 1.356,
     1.3568, 1.3572, 1.358,  1.3585, 1.359,  1.3595, 1.36,   1.3608};        //refractive index of scint
-        G4double rindexWorld [32] = {1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00};        //refractive index of world
-        //G4double rindexGlass [32] = {1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47, 1.47};
+        G4double rindexWorld [2] = {1.00, 1.00};        //refractive index of world
         G4double rindexGlass [2] = {1.47, 1.47};
 //        std::vector<G4double> energy = {2.034*eV, 3.021*eV, 4.136*eV};     //energy of photons
 //        std::vector<G4double> rindexScint = {1.34, 1.35, 1.36};            //refractive index of scint
@@ -171,7 +170,7 @@ void DetectorConstruction::DefineMaterials()
     
 //World(Air)
         G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();       //Air (worldMat) properties table
-        mptWorld->AddProperty("RINDEX", energy, rindexWorld, 32);
+        mptWorld->AddProperty("RINDEX", energy, rindexWorld, 2);
         worldMat->SetMaterialPropertiesTable(mptWorld);
     
 //Glass
