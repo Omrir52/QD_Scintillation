@@ -10,4 +10,4 @@
 /gps/ang/maxtheta 0.117 rad
 /gps/energy 4 GeV
 /run/initialize 
-/run/beamOn 1
+/run/beamOn 5

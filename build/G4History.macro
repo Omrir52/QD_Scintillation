@@ -67,7 +67,7 @@
 /gps/ang/maxtheta 0.117 rad
 /gps/energy 4 GeV
 /run/initialize
-/run/beamOn 1
+/run/beamOn 5
 /vis/scene/notifyHandlers scene-0
 /analysis/h1/getVector
 /analysis/h2/getVector
