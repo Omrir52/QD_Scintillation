@@ -33,6 +33,9 @@
 #include "G4ThreeVector.hh"
 #include "G4SDManager.hh"
 #include "G4ios.hh"
+#include "G4RunManager.hh"
+#include "G4AnalysisManager.hh"
+#include "run.hh"
 
 namespace B4c
 {
@@ -77,6 +80,11 @@ void CalorimeterSD::Initialize(G4HCofThisEvent* hce)
 G4bool CalorimeterSD::ProcessHits(G4Step* step,
                                      G4TouchableHistory*)
 {
+  
+  G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+
+  G4int pdg = step->GetTrack()->GetParticleDefinition()->GetPDGEncoding();
+  auto particlePDG = step->GetTrack()->GetDefinition()->GetPDGEncoding();
   // energy deposit
   auto edep = step->GetTotalEnergyDeposit();
 
@@ -107,24 +115,52 @@ G4bool CalorimeterSD::ProcessHits(G4Step* step,
     = (*fHitsCollection)[fHitsCollection->entries()-1];
 
   // Add values
-  hit->Add(edep, stepLength);
-  hitTotal->Add(edep, stepLength);
+  auto analysisManager = G4AnalysisManager::Instance();
+  int counter;
+  double energy = step->GetTrack()->GetKineticEnergy();
+  double wavelength = 0.001247/energy;
+  if (counter == 0){
+    counter = 0;
+  }
+  else{
+    counter == counter;
+  }
+  if (pdg == -22){
+    counter = abs(counter);
+    counter += 1;
+    analysisManager->FillNtupleDColumn(0,counter);
+    analysisManager->FillNtupleDColumn(1,evt);
+    analysisManager->FillNtupleDColumn(2,wavelength);
+    analysisManager->FillNtupleDColumn(3,energy);
+    analysisManager->AddNtupleRow(0);
+    //G4cout << "Counter: " << counter << G4endl;
+    //G4cout << "Energy: " << energy << G4endl;
+    //G4cout << "Wavelength: " << wavelength << G4endl;
+  }
 
+
+
+  //hit->Add(edep, stepLength, evt);
+  //hitTotal->Add(edep, stepLength, evt);
+  
+  //G4cout << "Paricle PDG: " << pdg << G4endl;
+  //G4cout << "Counter: " << counter << G4endl;
+  //G4cout << "Energy: " << energy << G4endl;
   return true;
+
+  //G4AnalysisManager *man = G4AnalysisManager::Instance();
+  //if (pdg == 22){
+  //man->FillNtupleIColumn(0, evt);
+  //man->FillNtupleDColumn(1, edep);
+  //man->AddNtupleRow(9);
+  //}
 }
 
 
 
 void CalorimeterSD::EndOfEvent(G4HCofThisEvent*)
 {
-  if ( verboseLevel>1 ) {
-     auto nofHits = fHitsCollection->entries();
-     G4cout
-       << G4endl
-       << "-------->Hits Collection: in this event they are " << nofHits
-       << " hits in the tracker chambers: " << G4endl;
-     for ( std::size_t i=0; i<nofHits; ++i ) (*fHitsCollection)[i]->Print();
-  }
+  
 }
 
 

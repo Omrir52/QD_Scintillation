@@ -31,6 +31,7 @@
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
+#include "run.hh"
 
 using namespace B4;
 
@@ -61,6 +62,8 @@ void ActionInitialization::Build() const
   SetUserAction(new PrimaryGeneratorAction);
   SetUserAction(new RunAction);
   SetUserAction(new EventAction);
+  //MyRunAction *raction = new MyRunAction();
+  //SetUserAction(raction);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
