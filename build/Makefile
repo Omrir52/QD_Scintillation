@@ -366,6 +366,54 @@ src/RunAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/RunAction.cc.s
 .PHONY : src/RunAction.cc.s
 
+src/detector.o: src/detector.cc.o
+.PHONY : src/detector.o
+
+# target to build an object file
+src/detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/detector.cc.o
+.PHONY : src/detector.cc.o
+
+src/detector.i: src/detector.cc.i
+.PHONY : src/detector.i
+
+# target to preprocess a source file
+src/detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/detector.cc.i
+.PHONY : src/detector.cc.i
+
+src/detector.s: src/detector.cc.s
+.PHONY : src/detector.s
+
+# target to generate assembly for a file
+src/detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/detector.cc.s
+.PHONY : src/detector.cc.s
+
+src/run.o: src/run.cc.o
+.PHONY : src/run.o
+
+# target to build an object file
+src/run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/run.cc.o
+.PHONY : src/run.cc.o
+
+src/run.i: src/run.cc.i
+.PHONY : src/run.i
+
+# target to preprocess a source file
+src/run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/run.cc.i
+.PHONY : src/run.cc.i
+
+src/run.s: src/run.cc.s
+.PHONY : src/run.s
+
+# target to generate assembly for a file
+src/run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/run.cc.s
+.PHONY : src/run.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -403,6 +451,12 @@ help:
 	@echo "... src/RunAction.o"
 	@echo "... src/RunAction.i"
 	@echo "... src/RunAction.s"
+	@echo "... src/detector.o"
+	@echo "... src/detector.i"
+	@echo "... src/detector.s"
+	@echo "... src/run.o"
+	@echo "... src/run.i"
+	@echo "... src/run.s"
 .PHONY : help
 
 
