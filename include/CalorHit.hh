@@ -64,15 +64,18 @@ class CalorHit : public G4VHit
     void Print() override;
 
     // methods to handle data
-    void Add(G4double de, G4double dl);
+    void Add(G4double de, G4double dl, G4int dev);
 
     // get methods
     G4double GetEdep() const;
     G4double GetTrackLength() const;
+    G4int GetEventID() const;
+    G4int GetPDGEncoding() const;
 
   private:
     G4double fEdep = 0.;        ///< Energy deposit in the sensitive volume
     G4double fTrackLength = 0.; ///< Track length in the  sensitive volume
+    G4int fevt = 0;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -101,9 +104,10 @@ inline void CalorHit::operator delete(void *hit)
   CalorHitAllocator->FreeSingle((CalorHit*) hit);
 }
 
-inline void CalorHit::Add(G4double de, G4double dl) {
+inline void CalorHit::Add(G4double de, G4double dl, G4int dev) {
   fEdep += de;
   fTrackLength += dl;
+  fevt += dev;
 }
 
 inline G4double CalorHit::GetEdep() const {
@@ -112,6 +116,10 @@ inline G4double CalorHit::GetEdep() const {
 
 inline G4double CalorHit::GetTrackLength() const {
   return fTrackLength;
+}
+
+inline G4int CalorHit::GetEventID() const{
+  return fevt;
 }
 
 }

@@ -34,6 +34,9 @@
 
 #include "CalorHit.hh"
 
+#include "G4RunManager.hh"
+#include "G4AnalysisManager.hh"
+
 #include <vector>
 
 class G4Step;
