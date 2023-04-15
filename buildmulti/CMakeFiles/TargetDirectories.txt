@@ -1,0 +1,7 @@
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/exampleB4c.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/edit_cache.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/rebuild_cache.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/list_install_components.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/install.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/install/local.dir
+/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/buildmulti/CMakeFiles/install/strip.dir
