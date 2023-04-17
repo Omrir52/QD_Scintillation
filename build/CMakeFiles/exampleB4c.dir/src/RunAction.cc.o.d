@@ -334,7 +334,7 @@ CMakeFiles/exampleB4c.dir/src/RunAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/PTL/Utility.hh \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/cstddef \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4RunManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/G4RunManager.hh \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/rundefs.hh \
@@ -558,6 +558,8 @@ CMakeFiles/exampleB4c.dir/src/RunAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TrackingMessenger.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UserTrackingAction.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4RunManagerKernel.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4EventManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Profiler.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UnitsTable.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UnitsTable.icc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4SystemOfUnits.hh

@@ -414,6 +414,30 @@ src/run.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/run.cc.s
 .PHONY : src/run.cc.s
 
+src/stepping.o: src/stepping.cc.o
+.PHONY : src/stepping.o
+
+# target to build an object file
+src/stepping.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/stepping.cc.o
+.PHONY : src/stepping.cc.o
+
+src/stepping.i: src/stepping.cc.i
+.PHONY : src/stepping.i
+
+# target to preprocess a source file
+src/stepping.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/stepping.cc.i
+.PHONY : src/stepping.cc.i
+
+src/stepping.s: src/stepping.cc.s
+.PHONY : src/stepping.s
+
+# target to generate assembly for a file
+src/stepping.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB4c.dir/build.make CMakeFiles/exampleB4c.dir/src/stepping.cc.s
+.PHONY : src/stepping.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -457,6 +481,9 @@ help:
 	@echo "... src/run.o"
 	@echo "... src/run.i"
 	@echo "... src/run.s"
+	@echo "... src/stepping.o"
+	@echo "... src/stepping.i"
+	@echo "... src/stepping.s"
 .PHONY : help
 
 

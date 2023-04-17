@@ -15,6 +15,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/exampleB4c.dir/src/PrimaryGeneratorAction.cc.o.d"
   "CMakeFiles/exampleB4c.dir/src/RunAction.cc.o"
   "CMakeFiles/exampleB4c.dir/src/RunAction.cc.o.d"
+  "CMakeFiles/exampleB4c.dir/src/detector.cc.o"
+  "CMakeFiles/exampleB4c.dir/src/detector.cc.o.d"
+  "CMakeFiles/exampleB4c.dir/src/run.cc.o"
+  "CMakeFiles/exampleB4c.dir/src/run.cc.o.d"
+  "CMakeFiles/exampleB4c.dir/src/stepping.cc.o"
+  "CMakeFiles/exampleB4c.dir/src/stepping.cc.o.d"
   "exampleB4c"
   "exampleB4c.pdb"
 )

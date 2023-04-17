@@ -16,6 +16,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/EventAction.cc" "CMakeFiles/exampleB4c.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/EventAction.cc.o.d"
   "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/PrimaryGeneratorAction.cc" "CMakeFiles/exampleB4c.dir/src/PrimaryGeneratorAction.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/PrimaryGeneratorAction.cc.o.d"
   "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/RunAction.cc" "CMakeFiles/exampleB4c.dir/src/RunAction.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/RunAction.cc.o.d"
+  "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/detector.cc" "CMakeFiles/exampleB4c.dir/src/detector.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/detector.cc.o.d"
+  "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/run.cc" "CMakeFiles/exampleB4c.dir/src/run.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/run.cc.o.d"
+  "/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/stepping.cc" "CMakeFiles/exampleB4c.dir/src/stepping.cc.o" "gcc" "CMakeFiles/exampleB4c.dir/src/stepping.cc.o.d"
   )
 
 # Targets to which this target links.

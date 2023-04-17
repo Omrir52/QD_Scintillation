@@ -181,6 +181,48 @@ CMakeFiles/exampleB4c.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB4c.dir/src/RunAction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/RunAction.cc -o CMakeFiles/exampleB4c.dir/src/RunAction.cc.s
 
+CMakeFiles/exampleB4c.dir/src/detector.cc.o: CMakeFiles/exampleB4c.dir/flags.make
+CMakeFiles/exampleB4c.dir/src/detector.cc.o: ../src/detector.cc
+CMakeFiles/exampleB4c.dir/src/detector.cc.o: CMakeFiles/exampleB4c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exampleB4c.dir/src/detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB4c.dir/src/detector.cc.o -MF CMakeFiles/exampleB4c.dir/src/detector.cc.o.d -o CMakeFiles/exampleB4c.dir/src/detector.cc.o -c /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/detector.cc
+
+CMakeFiles/exampleB4c.dir/src/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB4c.dir/src/detector.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/detector.cc > CMakeFiles/exampleB4c.dir/src/detector.cc.i
+
+CMakeFiles/exampleB4c.dir/src/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB4c.dir/src/detector.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/detector.cc -o CMakeFiles/exampleB4c.dir/src/detector.cc.s
+
+CMakeFiles/exampleB4c.dir/src/run.cc.o: CMakeFiles/exampleB4c.dir/flags.make
+CMakeFiles/exampleB4c.dir/src/run.cc.o: ../src/run.cc
+CMakeFiles/exampleB4c.dir/src/run.cc.o: CMakeFiles/exampleB4c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exampleB4c.dir/src/run.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB4c.dir/src/run.cc.o -MF CMakeFiles/exampleB4c.dir/src/run.cc.o.d -o CMakeFiles/exampleB4c.dir/src/run.cc.o -c /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/run.cc
+
+CMakeFiles/exampleB4c.dir/src/run.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB4c.dir/src/run.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/run.cc > CMakeFiles/exampleB4c.dir/src/run.cc.i
+
+CMakeFiles/exampleB4c.dir/src/run.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB4c.dir/src/run.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/run.cc -o CMakeFiles/exampleB4c.dir/src/run.cc.s
+
+CMakeFiles/exampleB4c.dir/src/stepping.cc.o: CMakeFiles/exampleB4c.dir/flags.make
+CMakeFiles/exampleB4c.dir/src/stepping.cc.o: ../src/stepping.cc
+CMakeFiles/exampleB4c.dir/src/stepping.cc.o: CMakeFiles/exampleB4c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exampleB4c.dir/src/stepping.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB4c.dir/src/stepping.cc.o -MF CMakeFiles/exampleB4c.dir/src/stepping.cc.o.d -o CMakeFiles/exampleB4c.dir/src/stepping.cc.o -c /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/stepping.cc
+
+CMakeFiles/exampleB4c.dir/src/stepping.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB4c.dir/src/stepping.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/stepping.cc > CMakeFiles/exampleB4c.dir/src/stepping.cc.i
+
+CMakeFiles/exampleB4c.dir/src/stepping.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB4c.dir/src/stepping.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/src/stepping.cc -o CMakeFiles/exampleB4c.dir/src/stepping.cc.s
+
 # Object files for target exampleB4c
 exampleB4c_OBJECTS = \
 "CMakeFiles/exampleB4c.dir/exampleB4c.cc.o" \
@@ -190,7 +232,10 @@ exampleB4c_OBJECTS = \
 "CMakeFiles/exampleB4c.dir/src/DetectorConstruction.cc.o" \
 "CMakeFiles/exampleB4c.dir/src/EventAction.cc.o" \
 "CMakeFiles/exampleB4c.dir/src/PrimaryGeneratorAction.cc.o" \
-"CMakeFiles/exampleB4c.dir/src/RunAction.cc.o"
+"CMakeFiles/exampleB4c.dir/src/RunAction.cc.o" \
+"CMakeFiles/exampleB4c.dir/src/detector.cc.o" \
+"CMakeFiles/exampleB4c.dir/src/run.cc.o" \
+"CMakeFiles/exampleB4c.dir/src/stepping.cc.o"
 
 # External object files for target exampleB4c
 exampleB4c_EXTERNAL_OBJECTS =
@@ -203,6 +248,9 @@ exampleB4c: CMakeFiles/exampleB4c.dir/src/DetectorConstruction.cc.o
 exampleB4c: CMakeFiles/exampleB4c.dir/src/EventAction.cc.o
 exampleB4c: CMakeFiles/exampleB4c.dir/src/PrimaryGeneratorAction.cc.o
 exampleB4c: CMakeFiles/exampleB4c.dir/src/RunAction.cc.o
+exampleB4c: CMakeFiles/exampleB4c.dir/src/detector.cc.o
+exampleB4c: CMakeFiles/exampleB4c.dir/src/run.cc.o
+exampleB4c: CMakeFiles/exampleB4c.dir/src/stepping.cc.o
 exampleB4c: CMakeFiles/exampleB4c.dir/build.make
 exampleB4c: /home/omrir52/software/geant4/geant4-v11.1.0-install/lib/libG4Tree.so
 exampleB4c: /home/omrir52/software/geant4/geant4-v11.1.0-install/lib/libG4FR.so
@@ -250,7 +298,7 @@ exampleB4c: /home/omrir52/software/geant4/geant4-v11.1.0-install/lib/libG4global
 exampleB4c: /home/omrir52/software/geant4/geant4-v11.1.0-install/lib/libG4clhep.so
 exampleB4c: /home/omrir52/software/geant4/geant4-v11.1.0-install/lib/libG4ptl.so.2.3.3
 exampleB4c: CMakeFiles/exampleB4c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable exampleB4c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable exampleB4c"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleB4c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

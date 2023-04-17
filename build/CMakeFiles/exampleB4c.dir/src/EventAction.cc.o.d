@@ -375,80 +375,7 @@ CMakeFiles/exampleB4c.dir/src/EventAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TouchableHistory.icc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4CollectionNameVector.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VSDFilter.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/CalorHit.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericAnalysisManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VAnalysisManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisManagerState.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisVerbose.hh \
- /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VTBaseHnManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4HnInformation.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisUtilities.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BinScheme.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Fcn.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VAnalysisManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4HnManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BaseAnalysisManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4NtupleBookingManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/ntuple_booking \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/cids \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/cid \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/typedefs \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/forit \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4NtupleBookingManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VNtupleManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VFileManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BaseFileManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VTHnFileManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH1ToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnMessenger.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UImessenger.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIdirectory.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIcommand.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIparameter.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UItokenNum.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ApplicationState.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnToolsManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnMessenger.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Tokenizer.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH2ToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH3ToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TP1ToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TP2ToolsManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h1d \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h1 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b1 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/base_histo \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/histo_data \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/axes \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/axis \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/eqT \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h2d \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h2 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b2 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h3d \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h3 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b3 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p1d \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p1 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/profile_data \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p2d \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p2 \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ToolsAnalysisManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericAnalysisManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericFileManager.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericFileManager.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4RunManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/G4RunManager.hh \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/rundefs.hh \
@@ -491,6 +418,12 @@ CMakeFiles/exampleB4c.dir/src/EventAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Random/Random.h \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Random/Random.icc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Utility/memory.h \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/CLHEP/Random/RandFlat.h \
@@ -572,9 +505,79 @@ CMakeFiles/exampleB4c.dir/src/EventAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VSteppingVerbose.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/trkgdefs.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TrackingMessenger.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UImessenger.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIdirectory.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIcommand.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UIparameter.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UItokenNum.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ApplicationState.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UserTrackingAction.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4RunManagerKernel.hh \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Event.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4EventManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Profiler.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4HnInformation.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4AnalysisUtilities.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BinScheme.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Fcn.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VAnalysisManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4HnManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/ntuple_booking \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/cids \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/cid \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/typedefs \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/forit \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VNtupleManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VFileManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4BaseFileManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VTHnFileManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnMessenger.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnToolsManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4THnMessenger.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4Tokenizer.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h1d \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h1 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b1 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/base_histo \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/histo_data \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/axes \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/axis \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/eqT \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h2d \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h2 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b2 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h3d \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/h3 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/b3 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p1d \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p1 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/profile_data \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p2d \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/tools/histo/p2 \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericFileManager.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4GenericFileManager.icc \
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/EventAction.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/CalorHit.hh \
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/G4RunManager.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4SDManager.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4SDStructure.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4VSensitiveDetector.hh \
@@ -582,4 +585,4 @@ CMakeFiles/exampleB4c.dir/src/EventAction.cc.o: \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4HCofThisEvent.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UnitsTable.hh \
  /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/G4UnitsTable.icc \
- /home/omrir52/software/geant4/geant4-v11.1.0-install/include/Geant4/Randomize.hh
+ /home/omrir52/software/geant4/geant4-v11.1.0/WbQD-Scint/include/Randomize.hh
