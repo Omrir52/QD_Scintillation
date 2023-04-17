@@ -61,11 +61,10 @@ RunAction::RunAction()
   //
 
   // Creating histograms
-  //analysisManager->CreateH1("Eabs","Edep in absorber", 100, 0., 800*MeV);
+  analysisManager->CreateH1("Counter","Counter", 50, 0. ,30000);
   //analysisManager->CreateH1("Egap","Edep in gap", 100, 0., 100*MeV);
   //analysisManager->CreateH1("Labs","trackL in absorber", 100, 0., 1*m);
   //analysisManager->CreateH1("Lgap","trackL in gap", 100, 0., 50*cm);
-  //analysisManager->CreateH1("Event", "Event",100, 0, 10);
 
   // Creating ntuple
   //
@@ -74,11 +73,18 @@ RunAction::RunAction()
   //analysisManager->CreateNtupleDColumn("Egap");
   //analysisManager->CreateNtupleDColumn("Labs");
   //analysisManager->CreateNtupleDColumn("Lgap");
-  analysisManager->CreateNtupleDColumn("Count");
+  //analysisManager->CreateNtupleDColumn("Count");
   analysisManager->CreateNtupleDColumn("Event");
   analysisManager->CreateNtupleDColumn("Wavelength");
-  analysisManager->CreateNtupleDColumn("Energy");
-  analysisManager->FinishNtuple();
+  //analysisManager->CreateNtupleDColumn("Energy");
+  analysisManager->CreateNtupleDColumn("Time");
+  //analysisManager->CreateNtupleDColumn("Counter");
+  analysisManager->FinishNtuple(0);
+
+  analysisManager->CreateNtuple("Event", "Event");
+  analysisManager->CreateNtupleDColumn("Counter");
+  analysisManager->FinishNtuple(1);
+  
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -106,7 +112,7 @@ void RunAction::BeginOfRunAction(const G4Run* /*run*/)
   // G4String fileName = "B4.xml";
   analysisManager->OpenFile(fileName);
 
-  G4cout << "Using " << analysisManager->GetType() << G4endl;
+  //G4cout << "Using " << analysisManager->GetType() << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -116,7 +122,6 @@ void RunAction::EndOfRunAction(const G4Run* /*run*/)
   // print histogram statistics
   //
   auto analysisManager = G4AnalysisManager::Instance();
-
   // save histograms & ntuple
   //
   analysisManager->Write();

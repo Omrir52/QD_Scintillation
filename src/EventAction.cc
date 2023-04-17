@@ -43,7 +43,7 @@
 
 namespace B4c
 {
-
+  int event_counter;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 EventAction::EventAction()
@@ -81,23 +81,14 @@ void EventAction::PrintEventStatistics(
                               G4double gapEdep, G4double gapTrackLength) const
 {
   // print event statistics
-  G4cout
-     << "   Absorber: total energy: "
-     << std::setw(7) << G4BestUnit(absoEdep, "Energy")
-     << "       total track length: "
-     << std::setw(7) << G4BestUnit(absoTrackLength, "Length")
-     << G4endl
-     << "        Gap: total energy: "
-     << std::setw(7) << G4BestUnit(gapEdep, "Energy")
-     << "       total track length: "
-     << std::setw(7) << G4BestUnit(gapTrackLength, "Length")
-     << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void EventAction::BeginOfEventAction(const G4Event* /*event*/)
-{}
+{
+  event_counter = 0;
+} 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -136,19 +127,9 @@ void EventAction::EndOfEventAction(const G4Event* event)
 
   // get analysis manager
   auto analysisManager = G4AnalysisManager::Instance();
-
-  // fill histograms
-  analysisManager->FillH1(0, absoHit->GetEdep());
-  analysisManager->FillH1(1, gapHit->GetEdep());
-  analysisManager->FillH1(2, absoHit->GetTrackLength());
-  analysisManager->FillH1(3, gapHit->GetTrackLength());
-
-  // fill ntuple
-  analysisManager->FillNtupleDColumn(0, absoHit->GetEdep());
-  analysisManager->FillNtupleDColumn(1, gapHit->GetEdep());
-  analysisManager->FillNtupleDColumn(2, absoHit->GetTrackLength());
-  analysisManager->FillNtupleDColumn(3, gapHit->GetTrackLength());
-  analysisManager->AddNtupleRow();
+  if (event_counter > 1000){
+    analysisManager->FillH1(0,event_counter);
+  }
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

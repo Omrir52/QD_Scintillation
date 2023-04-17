@@ -36,6 +36,7 @@
 #include "G4RunManager.hh"
 #include "G4AnalysisManager.hh"
 #include "run.hh"
+#include "EventAction.hh"
 
 namespace B4c
 {
@@ -80,9 +81,8 @@ void CalorimeterSD::Initialize(G4HCofThisEvent* hce)
 G4bool CalorimeterSD::ProcessHits(G4Step* step,
                                      G4TouchableHistory*)
 {
-  
+  auto analysisManager = G4AnalysisManager::Instance();
   G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-
   G4int pdg = step->GetTrack()->GetParticleDefinition()->GetPDGEncoding();
   auto particlePDG = step->GetTrack()->GetDefinition()->GetPDGEncoding();
   // energy deposit
@@ -115,29 +115,23 @@ G4bool CalorimeterSD::ProcessHits(G4Step* step,
     = (*fHitsCollection)[fHitsCollection->entries()-1];
 
   // Add values
-  auto analysisManager = G4AnalysisManager::Instance();
-  int counter;
   double energy = step->GetTrack()->GetKineticEnergy();
   double wavelength = 0.001247/energy;
-  if (counter == 0){
-    counter = 0;
-  }
-  else{
-    counter == counter;
-  }
+  double time;
+  //G4cout << "Counter: " << counter << G4endl;
+  time = step->GetPreStepPoint()->GetGlobalTime();
   if (pdg == -22){
-    counter = abs(counter);
-    counter += 1;
-    analysisManager->FillNtupleDColumn(0,counter);
-    analysisManager->FillNtupleDColumn(1,evt);
-    analysisManager->FillNtupleDColumn(2,wavelength);
-    analysisManager->FillNtupleDColumn(3,energy);
+    event_counter++;
+    
+    analysisManager->FillNtupleDColumn(0,0,evt);
+    analysisManager->FillNtupleDColumn(0,1,wavelength);
+    //analysisManager->FillNtupleDColumn(2,energy);
+    analysisManager->FillNtupleDColumn(0,2,time);
     analysisManager->AddNtupleRow(0);
-    //G4cout << "Counter: " << counter << G4endl;
     //G4cout << "Energy: " << energy << G4endl;
     //G4cout << "Wavelength: " << wavelength << G4endl;
   }
-
+  
 
 
   //hit->Add(edep, stepLength, evt);
@@ -147,20 +141,12 @@ G4bool CalorimeterSD::ProcessHits(G4Step* step,
   //G4cout << "Counter: " << counter << G4endl;
   //G4cout << "Energy: " << energy << G4endl;
   return true;
-
-  //G4AnalysisManager *man = G4AnalysisManager::Instance();
-  //if (pdg == 22){
-  //man->FillNtupleIColumn(0, evt);
-  //man->FillNtupleDColumn(1, edep);
-  //man->AddNtupleRow(9);
-  //}
 }
 
 
 
 void CalorimeterSD::EndOfEvent(G4HCofThisEvent*)
 {
-  
 }
 
 

@@ -32,6 +32,7 @@
 #include "RunAction.hh"
 #include "EventAction.hh"
 #include "run.hh"
+#include "stepping.hh"
 
 using namespace B4;
 
@@ -62,6 +63,9 @@ void ActionInitialization::Build() const
   SetUserAction(new PrimaryGeneratorAction);
   SetUserAction(new RunAction);
   SetUserAction(new EventAction);
+
+  //MySteppingAction *steppingAction = new MySteppingAction();
+  //SetUserAction(steppingAction);
   //MyRunAction *raction = new MyRunAction();
   //SetUserAction(raction);
 }

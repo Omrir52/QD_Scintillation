@@ -1,5 +1,5 @@
 #include "PrimaryGeneratorAction.hh"
-
+#include "G4GeneralParticleSource.hh"
 
 namespace B4
 {

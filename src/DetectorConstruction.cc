@@ -34,7 +34,7 @@
 namespace B4c
 {
 
-G4ThreadLocal
+//G4ThreadLocal
 
 
 DetectorConstruction::DetectorConstruction()
@@ -117,6 +117,10 @@ void DetectorConstruction::DefineMaterials()
     1.3475, 1.348,  1.3485, 1.3492, 1.35,   1.3505, 1.351,  1.3518,
     1.3522, 1.3530, 1.3535, 1.354,  1.3545, 1.355,  1.3555, 1.356,
     1.3568, 1.3572, 1.358,  1.3585, 1.359,  1.3595, 1.36,   1.3608};        //refractive index of scint
+        
+        G4double energyScint[32] = {1.771 * eV ,1.914 * eV ,2.057 * eV ,2.200 * eV ,2.343 * eV ,2.486 * eV ,2.629 * eV ,2.771 * eV ,2.914 * eV ,3.057 * eV ,3.200 * eV ,3.343 * eV ,3.486 * eV ,3.629 * eV ,3.771 * eV ,3.914 * eV ,4.057 * eV ,4.200 * eV ,4.343 * eV ,4.486 * eV ,4.629 * eV ,4.771 * eV ,4.914 * eV ,5.057 * eV ,5.200 * eV ,5.343 * eV ,5.486 * eV ,5.629 * eV ,5.771 * eV ,5.914 * eV ,6.057 * eV ,6.200 * eV};
+
+
         G4double rindexWorld [2] = {1.00, 1.00};        //refractive index of world
         G4double rindexGlass [2] = {1.47, 1.47};
 //        std::vector<G4double> energy = {2.034*eV, 3.021*eV, 4.136*eV};     //energy of photons
@@ -141,10 +145,10 @@ void DetectorConstruction::DefineMaterials()
     
         G4MaterialPropertiesTable *mptScint = new G4MaterialPropertiesTable();
      //dependant on energy
-        mptScint->AddProperty("RINDEX", energy, rindexScint, 32);
-        mptScint->AddProperty("ABSLENGTH", energy, absorption, 32);
-        mptScint->AddProperty("SCINTILLATIONCOMPONENT1", energy, scintFast, 32);
-        mptScint->AddProperty("SCINTILLATIONCOMPONENT2", energy, scintSlow, 32);
+        mptScint->AddProperty("RINDEX", energyScint, rindexScint, 32);
+        mptScint->AddProperty("ABSLENGTH", energyScint, absorption, 32);
+        mptScint->AddProperty("SCINTILLATIONCOMPONENT1", energyScint, scintFast, 32);
+        mptScint->AddProperty("SCINTILLATIONCOMPONENT2", energyScint, scintSlow, 32);
      //independant on energy
         mptScint->AddConstProperty("SCINTILLATIONYIELD", 1357./MeV); //from paper 1357./MeV//
         mptScint->AddConstProperty("RESOLUTIONSCALE", 1.0);
