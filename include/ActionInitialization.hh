@@ -31,6 +31,7 @@
 #define B4cActionInitialization_h 1
 
 #include "G4VUserActionInitialization.hh"
+#include "stepping.hh"
 
 namespace B4c
 {

@@ -36,6 +36,7 @@
 
 #include "G4RunManager.hh"
 #include "G4AnalysisManager.hh"
+#include "EventAction.hh"
 
 #include <vector>
 

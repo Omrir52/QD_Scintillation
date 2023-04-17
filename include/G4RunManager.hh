@@ -139,7 +139,6 @@ class G4RunManager
   friend class G4RunManagerFactory;
 
   public:
-
     using ProfilerConfig = G4ProfilerConfig<G4ProfileType::Run>;
       // the profiler aliases are only used when compiled with the
       // GEANT4_USE_TIMEMORY flag enabled.
