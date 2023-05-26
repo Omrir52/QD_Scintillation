@@ -64,10 +64,10 @@ void ActionInitialization::Build() const
   SetUserAction(new RunAction);
   SetUserAction(new EventAction);
 
-  //MySteppingAction *steppingAction = new MySteppingAction();
-  //SetUserAction(steppingAction);
-  //MyRunAction *raction = new MyRunAction();
-  //SetUserAction(raction);
+  /*MySteppingAction *steppingAction = new MySteppingAction();
+  SetUserAction(steppingAction);
+  MyRunAction *raction = new MyRunAction();
+  SetUserAction(raction);*/
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

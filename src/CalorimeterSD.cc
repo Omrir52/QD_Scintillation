@@ -121,15 +121,20 @@ G4bool CalorimeterSD::ProcessHits(G4Step* step,
   //G4cout << "Counter: " << counter << G4endl;
   time = step->GetPreStepPoint()->GetGlobalTime();
   if (pdg == -22){
-    event_counter++;
-    
-    analysisManager->FillNtupleDColumn(0,0,evt);
-    analysisManager->FillNtupleDColumn(0,1,wavelength);
-    //analysisManager->FillNtupleDColumn(2,energy);
-    analysisManager->FillNtupleDColumn(0,2,time);
-    analysisManager->AddNtupleRow(0);
-    //G4cout << "Energy: " << energy << G4endl;
-    //G4cout << "Wavelength: " << wavelength << G4endl;
+    if (wavelength >= 300){
+      event_counter++;
+      
+      analysisManager->FillNtupleDColumn(0,0,evt);
+      analysisManager->FillNtupleDColumn(0,1,wavelength);
+      //analysisManager->FillNtupleDColumn(2,energy);
+      analysisManager->FillNtupleDColumn(0,2,time);
+      analysisManager->AddNtupleRow(0);
+      //G4cout << "Energy: " << energy << G4endl;
+      //G4cout << "Wavelength: " << wavelength << G4endl;
+    }
+    else{
+      step->GetTrack()->SetTrackStatus(fStopAndKill);
+    }
   }
   
 

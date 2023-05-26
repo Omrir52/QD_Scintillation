@@ -70,8 +70,8 @@ void DetectorConstruction::DefineMaterials()
     CdS->AddElement(nist->FindOrBuildElement("S"), 50.0*perCent);
 
     Scint = new G4Material("Scint", 1.000*g/cm3, 2);            //add the density of scintillator
-    Scint->AddMaterial(water, 90.0*perCent);
-    Scint->AddMaterial(CdS, 10.0*perCent);
+    Scint->AddMaterial(water, 99.99653*perCent);
+    Scint->AddMaterial(CdS, 0.00347*perCent);
 
     //Testing For Xenon
     //Element
@@ -246,7 +246,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     
         //---------------QD---------------------
     
-        G4Tubs *solidQD = new G4Tubs("QD", 0.*m, 0.037*m, 0.067*m, 0., 2.0*CLHEP::pi);
+        G4Tubs *solidQD = new G4Tubs("QD", 0.*m, 0.037*m, 0.032*m, 0., 2.0*CLHEP::pi);
 
         G4LogicalVolume *logicQD = new G4LogicalVolume(solidQD, Scint, "QD");
 
