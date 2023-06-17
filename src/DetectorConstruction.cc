@@ -73,36 +73,10 @@ void DetectorConstruction::DefineMaterials()
     Scint->AddMaterial(water, 99.99653*perCent);
     Scint->AddMaterial(CdS, 0.00347*perCent);
 
-    //Testing For Xenon
-    //Element
-    fLXe = new G4Material("fLXe",3.020* g / cm3, 1);
-    fLXe -> AddElement(nist->FindOrBuildElement("Xe"), 100.0*perCent);
 
     
    // ------------ Generate & Add Material Properties Table ------------
 
-
-// Testing with Xenon
-  std::vector<G4double> lxe_Energy = { 7.0 * eV, 7.07 * eV, 7.14 * eV };
-
-  std::vector<G4double> lxe_SCINT = { 0.1, 1.0, 0.1 };
-  std::vector<G4double> lxe_RIND  = { 1.59, 1.57, 1.54 };
-  std::vector<G4double> lxe_ABSL  = { 35. * cm, 35. * cm, 35. * cm };
-  fLXe_mt = new G4MaterialPropertiesTable();
-  fLXe_mt->AddProperty("SCINTILLATIONCOMPONENT1", lxe_Energy, lxe_SCINT);
-  fLXe_mt->AddProperty("SCINTILLATIONCOMPONENT2", lxe_Energy, lxe_SCINT);
-  fLXe_mt->AddProperty("RINDEX", lxe_Energy, lxe_RIND);
-  fLXe_mt->AddProperty("ABSLENGTH", lxe_Energy, lxe_ABSL);
-  fLXe_mt->AddConstProperty("SCINTILLATIONYIELD", 12000. / MeV);
-  fLXe_mt->AddConstProperty("RESOLUTIONSCALE", 1.0);
-  fLXe_mt->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 20. * ns);
-  fLXe_mt->AddConstProperty("SCINTILLATIONTIMECONSTANT2", 45. * ns);
-  fLXe_mt->AddConstProperty("SCINTILLATIONYIELD1", 1.0);
-  fLXe_mt->AddConstProperty("SCINTILLATIONYIELD2", 0.0);
-  fLXe->SetMaterialPropertiesTable(fLXe_mt);
-
-  // Set the Birks Constant for the LXe scintillator
-  fLXe->GetIonisation()->SetBirksConstant(0.126 * mm / MeV);
 //Scintillator:
         // working for Cherenkov 14/3/22
         G4double energy [32] = {2.034 * eV, 2.068 * eV, 2.103 * eV, 2.139 * eV, 2.177 * eV, 2.216 * eV,
@@ -246,7 +220,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     
         //---------------QD---------------------
     
-        G4Tubs *solidQD = new G4Tubs("QD", 0.*m, 0.037*m, 0.032*m, 0., 2.0*CLHEP::pi);
+        G4Tubs *solidQD = new G4Tubs("QD", 0.*m, 0.037*m, 0.067*m, 0., 2.0*CLHEP::pi);
 
         G4LogicalVolume *logicQD = new G4LogicalVolume(solidQD, Scint, "QD");
 
